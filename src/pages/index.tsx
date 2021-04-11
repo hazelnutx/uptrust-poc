@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import DefaultLayout from '../layout/DefaultLayout'
 
 export default function Home() {
   return (
-    <div>
+    <DefaultLayout>
       <Head>
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
@@ -39,6 +40,6 @@ export default function Home() {
           </section>
         </div>
       </main>
-    </div>
+    </DefaultLayout>
   )
 }

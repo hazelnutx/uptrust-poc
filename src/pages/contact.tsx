@@ -1,3 +1,5 @@
+import DefaultLayout from '../layout/DefaultLayout'
+
 export default function Contact() {
-  return <h1>Contact</h1>
+  return <DefaultLayout>Contact</DefaultLayout>
 }

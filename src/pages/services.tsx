@@ -1,3 +1,5 @@
+import DefaultLayout from '../layout/DefaultLayout'
+
 export default function Services() {
-  return <h1>Services</h1>
+  return <DefaultLayout>Services</DefaultLayout>
 }

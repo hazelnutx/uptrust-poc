@@ -2,8 +2,14 @@ import Navbar from '../components/Navbar'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styled from '@emotion/styled'
+import { FC } from 'react'
 
-const DefaultLayout = ({ children }) => {
+interface Props {
+  children: any
+  thumbnail?: boolean
+}
+
+const DefaultLayout: FC<Props> = ({ children, thumbnail }) => {
   const router = useRouter()
   return (
     <div className='h-screen'>
@@ -26,7 +32,11 @@ const DefaultLayout = ({ children }) => {
             Image
           </div>
         )}
-        <div className='w-10/12 m-auto bg-accent-1'>{children}</div>
+        {thumbnail ? (
+          <div className='w-full h-screen'>{children}</div>
+        ) : (
+          <div className='w-10/12 m-auto bg-accent-1'>{children}</div>
+        )}
       </section>
       <Footer>
         <p>Uptrust 2021</p>

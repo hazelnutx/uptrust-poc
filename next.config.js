@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['uptrust.eu'],
+    domains: ['uptrust.eu', 'images.ctfassets.net'],
   },
 }

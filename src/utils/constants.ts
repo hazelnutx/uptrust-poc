@@ -1,1 +1,6 @@
 export const primary = '#131433'
+export const accent_1 = '#FAFAFA'
+export const accent_2 = '#EAEAEA'
+export const accent_7 = '#333'
+export const success = '#0070f3'
+export const cyan = '#79FFE1'
