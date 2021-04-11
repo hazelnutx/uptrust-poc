@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import DefaultLayout from '../layout/DefaultLayout'
+import DefaultLayout from '../src/layout/DefaultLayout'
 
 export default function Home() {
   return (

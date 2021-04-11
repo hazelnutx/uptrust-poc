@@ -1,7 +1,7 @@
-import { client } from '../../contentful'
+import { client } from '../../src/contentful'
 import styled from '@emotion/styled'
 import Image from 'next/image'
-import DefaultLayout from '../../layout/DefaultLayout'
+import DefaultLayout from '../../src/layout/DefaultLayout'
 
 export const getStaticPaths = async () => {
   const res = await client.getEntries({

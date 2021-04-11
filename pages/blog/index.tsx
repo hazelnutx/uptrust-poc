@@ -1,6 +1,6 @@
-import PostContainer from '../../components/Blog/PostContainer'
-import { client } from '../../contentful'
-import DefaultLayout from '../../layout/DefaultLayout'
+import PostContainer from '../../src/components/Blog/PostContainer'
+import { client } from '../../src/contentful'
+import DefaultLayout from '../../src/layout/DefaultLayout'
 
 export async function getStaticProps() {
   const res = await client.getEntries({
